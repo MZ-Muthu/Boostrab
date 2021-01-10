@@ -1,0 +1,44 @@
+@media only screen and (max-width: 490px) {
+  .res {
+    font-size: 3vw;
+    
+  }
+ .table td, .table th {
+    
+    padding: 1vw;
+  }
+}
+
+@media only screen and (min-width: 90px) {
+.full
+  {
+  width: 100%;
+  }
+}
+input[type=file] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+button, input, optgroup, select, textarea {
+    margin-left: 0px;
+}
+.change
+{
+  padding-top: 8px;
+ 
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#move
+{
+  margin-left: -14px;
+}
+#move2{
+  margin-left: -14px;
+}
+#move3{
+  margin-left: -14px;
+}

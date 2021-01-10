@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+      
+.rate {
+    float: left;
+    height: 46px;
+   
+}
+@media only screen and (min-width: 1200px)
+{
+    .rate{
+    margin-left: -36px;
+    }
+}
+
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+
+.date {
+    
+    position: relative;;
+    width: 110px;
+    height: 60px;
+    padding: 10px;
+    line-height: 15px;
+}
+
+.date1 {
+    
+    position: relative;;
+    width: 110px;
+    height: 60px;
+    padding: 10px;
+    line-height: 15px;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .date{
+    margin-left: -106px;
+    }
+}
+.date:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+ 
+  <div class="row">
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-8">        
+        <ul class="nav" style="background-color:lavender;">
+            <li class="nav-item">
+                <div class="form-check">
+                    
+                    <div class="dropdown"  style="border:none;outline: none;">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" >
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">Email
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Link 1</a>
+                          <a class="dropdown-item" href="#">Link 2</a>
+                          <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                      </div>
+                  </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Forward</a>
+            </li>
+            <li class="nav-item">
+                <div class="form-check">
+                    
+                    <div class="dropdown"  style="border:none;outline: none;">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" >
+                            Download
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Link 1</a>
+                          <a class="dropdown-item" href="#">Link 2</a>
+                          <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                      </div>
+                  </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Change Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">add to Requirement</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Delete</a>
+             </li>
+            
+        </ul>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col" style="background-color:lavender;">
+                <div class="form-check">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Ram</label>
+                      </div>
+                  </div>
+                  <div class="container-fluid">
+                    <p>Job Description with company location</p>
+                    <div class="row">
+                        
+                        <div class="col-sm-6">
+                            <span class="d-block p-1">Exp:xxx | CTC:xxx</span>
+                            <span class="d-block p-1">Current-Designation:xxx</span>
+                            <span class="d-block p-1">Current-Company:xxx</span>
+                            <span class="d-block p-1">Functional-Area:xxx</span>
+                            <span class="d-block p-1">Industry:xxx</span>
+                        </div>
+                        <div class="col-sm-6">   
+                            <span class="d-block p-1">Current-Location:xxx</span>
+                            <span class="d-block p-1">Pref-Location:xxx</span>
+                            <span class="d-block p-1">Education</span>
+                            <span class="d-block p-1">Phone</span>
+                            <span class="d-block p-1">Email</span>
+                        </div>
+                      
+                      </div>
+                      <p>Key-Skills:xxx</p>
+                      <div class="row">
+                      <div class="d-inline p-1">0 Requirements</div>|
+                        <div class="d-inline p-1">1 Views</div>|
+                        <div class="d-inline p-1">Applied On:Date</div>|
+                        <div class="d-inline p-1">Active:xxx</div>|
+                        <div class="d-inline p-1">Modified:xxx</div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                        
+                            <div class="col-sm-6">
+                                <span class="d-block p-1">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" style="height:36px;width:152px;font-size: 15px;" data-toggle="dropdown">
+                                         Applied-Maching
+                                        </button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Link 1</a>
+                                          <a class="dropdown-item" href="#">Link 2</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                        <a href="#" class="btn" style="border: 1px solid gray;">Reject</a>
+                                      </div>
+                                    </div>
+
+                                </span>
+                                <span class="d-block p-1">
+                                    <div class="date"> 
+                                        <div class="dateHolder">
+                                            <small>by</small>RMS<br /><small>on 08 Dec 20</small>
+                                        </div>
+                                    </div>
+                                </span>
+                                <span class="d-block p-1">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                      </div>
+                                    </span>
+
+                                    
+                              
+                                
+                                <span class="d-block p-1">
+                                   msg
+                                </span>
+                                
+                                <span class="d-block p-1">
+                                    <div class="date1"> 
+                                        <div class="dateHolder">
+                                            <small>by</small>RMS<br /><small>on 08 Dec 20</small>
+                                        </div>
+                                    </div>
+                                </span>
+                                
+                                <span class="d-block p-1">
+                                    <img src="https://www.sharesoft.in/wp-content/uploads/2017/07/CSS2-300x300.jpg" height="25px" style="margin-left: -20px;" alt=""/>
+                                    <img src="https://www.sharesoft.in/wp-content/uploads/2017/07/CSS2-300x300.jpg" height="25px" style="margin-left: 4px;"  alt=""/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>    
+                    
+            </div>`
+           
+
+          </div>
+          
+        
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>

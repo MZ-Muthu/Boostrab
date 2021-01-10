@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+
+
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="col col.col-12 col.col-sm-6 col.col-lg-8">
+        <div class="jumbotron">
+          <div>
+            <h3 style="text-align: center;">Image Category</h3>
+            <p>Select Category : </p>
+            <select id="cimg" onchange="changeImg(this)" aria-placeholder="Select Category">
+              <option value="1"> </option>
+              <option value="2">Logo</option>
+              <option value="3">Top Banner</option>
+              <option value="4">Main Banner</option>
+            </select>
+            <p id="select"></p>
+            <form name="Upload" action="#"  enctype="multipart/form-data" method="post">
+              <p class="change">Image Upload: </p>
+              <div class="input-group">
+                <input type="hidden" id="filename" name="filename" value="">
+                <input type="file" name="image" id="imagefile" class="form-control form-control-sm" />
+              </div>
+            </form>
+
+            <p id="ichange" class="change">upload file</p>
+            <input type="button" value="Upload" class="rounded-0 btn btn-primary" onClick="checkSize(imagefile);" />
+          </div>
+          <div>
+            <table class="table col-md-12 col-lg-8" id="myTable" style="margin-top:20px" style="text-align: center;">
+              <thead>
+                <tr class="res">
+                  <th>S.NO</th>
+                  <th>File Type</th>
+                  <th>File Size</th>
+                  <th>File Name</th>
+                  <th>File Category</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="datas">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col col.col-12 col.col-sm-6 col.col-lg-8">
+        <div class="jumbotron">
+          <h3 style="text-align: center;">Content Category</h3>
+          <p>Select Category</p>
+          <div>
+            <select id="cdes" onchange="changeDes(this)" aria-placeholder="Select Category">
+              <option value="1"></option>
+              <option value="2">Home</option>
+              <option value="3">About Us</option>
+              <option value="4">Contact Us</option>
+            </select>
+          </div>  
+          <p id="dselect"></p>
+          <div class="container mt-4 mb-4">
+            <div class="row justify-content-md">
+              <div class="col-md-12 col-lg-8">
+
+                <p id="move">Describe the issue in detail</p>
+                <div id="move2" class="form-group">
+                  <textarea id="editor"></textarea>
+                </div>
+
+              </div>
+            </div>
+            <p id="desselect"></p>
+            <input type="button" id="move3" value="Submit" class="rounded-0 btn btn-primary" onClick="checkDes();" />
+          </div>
+          <div>
+            <table class="table col-md-12 col-lg-8" id="mydesTable">
+              <thead>
+                <tr  class="res">
+                  <th>S.NO</th>
+                  <th>Category</th>
+                  <th>Description</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="desdatas">
+              </tbody>
+            </table>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col col.col-12 col.col-sm-6 col.col-lg-8">
+        <div class="jumbotron">
+          <h1 style="text-align: center;" id="info"></h1>
+          <div class="center">
+            <div class="row">
+              <div class="col-sm-4" style="text-align: center;">
+                <button type="submit"  class="full btn btn-primary col.col-6 col.col-sm-4" onclick="save1()">Save</button>
+              </div>
+              <div class="col-sm-4" style="text-align: center;">
+                <button type="submit" class=" full btn btn-success col.col-6 col.col-sm-4" id="subbtn"
+                  onclick="Publish()">Submit</button>
+              </div>
+              <div class="col-sm-4" style="text-align: center;">
+                <button type="submit" class="full btn btn-danger col.col-6 col.col-sm-4" onclick="cancel()">Cancel</button>
+              </div>
+
+            </div>
+            <br>
+            <h5 id="demo"></h5>
+
+
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Conform Save All Data</h2>
+                <button type="submit" class="btn btn-success" onclick="save()" id="save">Submit</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    // var btn = document.getElementById("mubtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    // btn.onclick = function() {
+    //   modal.style.display = "block";
+    // }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: 'textarea#editor',
+      menubar: false
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

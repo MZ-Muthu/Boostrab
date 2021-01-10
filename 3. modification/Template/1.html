@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  
+  <meta charset="utf-8">
+
+<base href="https://editor.p5js.org/jakshob/present/10LF5jSm2/">
+<style>
+html, body {
+margin: 0;
+padding: 0;
+}
+canvas {
+display: block;
+}
+</style></head>
+<body>
+  <script>let load;
+let loadedImage;
+let pick = 0;
+
+
+
+function mousePressed() {
+ 
+let url = 'https://picsum.photos/v2/list?page=1&limit=5';
+httpGet(url, 'json', false, function(response) {
+  
+  load = response;
+     
+  console.log(load);
+  
+  loadedImage = loadImage(load[0].download_url);
+  
+});
+
+}
+
+function keyPressed() {
+if(pick<load.length)pick++;
+if(pick==load.length) pick = 0;
+text(load[pick].author,40,40);
+console.log(pick);
+loadedImage = loadImage(load[pick].download_url); 
+}
+
+function setup() {
+
+createCanvas(windowWidth, windowHeight);
+imageMode(CENTER);
+textAlign(CENTER, CENTER);
+
+
+fill(255);
+
+}
+
+function draw() {
+
+background(0);
+if(!loadedImage) {
+  
+  textSize(20);
+  
+  text("Press a mouse button to fetch the image list",(width/2),(height/2)-height/2.5);
+text("Press a key to go to next image in the list",(width/2),(height/2)-height/4);
+}
+if(loadedImage) {
+   textSize(60);
+  image(loadedImage, width/2, height/2, loadedImage.width/10, loadedImage.height/10);
+  text(load[pick].author,(width/2),(height/2)-height/2.5);
+}
+
+}
+
+function windowResized() {
+resizeCanvas(windowWidth, windowHeight);
+}
+</script>
+
+
+</body>
+</html>

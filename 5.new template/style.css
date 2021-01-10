@@ -1,0 +1,448 @@
+.back
+{
+    height: 77px;
+    padding: 0 10px;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right,#0050ab,#0090b5);
+    background-size: 100vw 100vh;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    transition: top .5s ease-out;
+    color: #fff;
+}
+
+.text
+{
+    font-size: 20px;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn
+{
+    height:40px;
+    font-size:12px;
+    min-width:70px;
+    padding:5px;
+    border-radius:5px;
+    color:#FFF;
+    font-weight:400;
+    cursor:pointer;
+    background:linear-gradient(to bottom right,#ff9a00,#f89750);
+    outline:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    line-height:1;
+    width:auto;
+    margin-left: 880px;
+}
+
+.bimg
+{
+    background-image: url('https://image1.jdomni.in/banner/22102020/2E/89/25/F03AFCABE61B238A53A32C4EC9_1603376255932.webp'); 
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    
+}
+
+span > i 
+{
+    color: black;
+    
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+div.inline { display: inline}
+
+.wei
+{
+    font-weight: bold;
+}
+
+.space
+{
+    margin-left: 750px;
+}
+
+.change
+{
+    color: #333333;
+    font-size: 16px;
+}
+
+div.move
+{
+    margin-left: 15px;
+}
+
+.move1
+{
+    margin-left: 271px;
+}
+
+.move2
+{
+    margin-left: 47px;
+}
+
+.txt
+{
+    padding-top: 25px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.btn1
+{
+    width: 144px;
+   padding: 12px 25px;
+   background-color: #6072A6;
+   border: none;
+   border-radius: 15px;
+   outline: none;
+   color: white;
+   font-size: 16px;
+   align-content: center;
+   transform: translate(395%, 53%);
+
+} 
+
+.txt1
+{
+    font-size: 34px;
+    text-align: center;
+    color: #2e4070;
+    font-weight: bold;
+}
+
+.column {
+    float: left;
+    width: 18%;
+    padding: 0 10px;
+  }
+  
+  
+  .row {margin: 0 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+ 
+  .card {
+   
+    padding: 16px;
+    text-align: center;
+    background-color:white;
+  }
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imgsize
+{
+    color: rgb(51, 51, 51);
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    max-height: 250px;
+    border-color: rgb(194, 209, 255);
+    border-style: none;
+    border-width: 0px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.headed
+{
+    color: rgb(46, 64, 112);
+    min-height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    border-color: rgb(46, 64, 112);
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px;
+    letter-spacing: 0.7px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 14px 0px;
+}
+
+.cont
+{
+    color: rgb(7, 7, 7);
+    min-height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    border-color: rgb(7, 7, 7);
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px;
+    letter-spacing: 0.7px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn2
+{
+    width: 144px;
+    padding: 10px 24px;
+    background-color: #6072A6;
+    text-decoration: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    font-size: 12px;
+    align-content: center;
+   
+}
+
+.moved
+{
+    padding-top: 10px;
+}
+
+.img1
+{
+    height:343px;
+    width: 620px;
+    padding: 18px;
+    border-radius: 30px;
+    float: left;
+    text-align: center;
+}
+
+.txt2
+{
+    font-size: 32px;
+    color: #2e4070;
+    text-align: center;
+}
+
+.txt3
+{
+    font-size: 23px;
+    color: black;
+    text-align: center;
+    line-height: 44px;
+}
+
+
+.column1 {
+    float: left;
+    width: 30%;
+    padding: 18px;
+   
+  }
+  
+  /* Clearfix (clear floats) */
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column1 {
+      width: 100%;
+    }
+  }
+
+  .img2
+  {
+      height: 225px;
+      width: 410px;
+      border-radius: 20px;
+  }
+
+  .youtube
+  {
+      
+      border-radius: 20px;
+  }
+
+  .padd
+  {
+     
+      height: 256px;
+      width: 450px;
+      border-radius: 20px;
+      float: left;
+  }
+
+  .txt4
+{
+    font-size: 22px;
+    color: #2e4070;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 128px;
+    margin-left: 10px;
+    padding-left: 10px;
+    
+}
+
+.txt5
+{
+    
+    font-size: 18px;
+    color: black;
+     margin-left: 10px;
+    text-align: center;
+}
+
+.work {
+    background: white;
+    border-radius: 10px;
+    font-size: 35px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius:50%;
+    display:inline-block;
+    padding:10px;
+    border: 1px solid #eb19eb;
+    
+  }
+  
+  i > img {
+    display:block;
+  }
+
+  .move3
+  {
+    padding-left: 141px;
+  }
+
+  .move4
+  {
+      margin-left: 741px;
+      margin-top: -10px;
+  }
+
+  .field
+  {
+      height: 40px;
+      width: 529px;
+      font-size: 14px;
+      padding: 5px 8px;
+      border-radius: 10px;
+      outline: none;
+      border: 1px solid rgb(173, 166, 166);
+  }
+
+  .change1
+  {
+    
+      color: white;
+  }
+
+  .change2
+  {
+      float: right;
+      color: white;
+  }
+
+  .icob
+  {
+      margin-left: 100px;
+      font-size: 48px;
+      color: rgb(46, 64, 112);
+  }
+
+  .loc
+  {
+      margin-left: 36px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(46, 64, 112);
+      text-align: center;
+  }
+
+  .loc1
+  {
+    font-size: 16px;
+    margin-left: 180px;
+   
+  
+  }
+
+
+  .inline { display: inline}
+  .img3
+  {
+  	height: 24px;
+    width: 32px;
+  }
+  
+  .txt6
+  {
+  	font-size: 22px;
+    color: #2e4070;
+    margin-left: 21px;
+  }
+  
+  .txt7
+  {
+  	font-size: 18px;
+    width: 250px;
+     margin-left: 51px;
+     right:0px;
+  }
+  
+  .move5
+  {
+  	padding-left: 30%;
+  }
+  
+  .move7
+  {
+      height:228px;
+      width: 50px;
+      top: 228px;
+      left: 800px;
+      margin-left: 288px;
+  }
+
+  .move8
+  {
+      top: -194px;
+      right: -134px;
+  }
+      
+  .move9
+  {
+      height:228px;
+      width: 50px;
+      top: 0px;
+      margin-left: 0px;
+  }

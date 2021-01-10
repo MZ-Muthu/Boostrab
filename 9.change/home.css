@@ -1,0 +1,225 @@
+
+
+.banner
+{
+    height: 664px;
+    background-image:url('./i1.jpg');
+    background-repeat: no-repeat;
+    background-color: rgba(0,0, 0, 0.4); 
+    background-blend-mode: overlay;
+    background-size: 100% 100%;
+       
+}
+
+.text2{
+    height: 250px;
+}
+.txtback
+{
+    padding: 40px;
+    background-color: #0bb9e5;
+    width: 90%;
+    margin-top: 370px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.field
+{
+    height: 50px;
+   width: 100px;
+    margin-bottom: -30px;
+   
+}
+.text
+{
+    width: 100%;
+}
+.list1
+{
+    width: 100%;
+    margin: auto;
+    color: black;
+}
+.search-btn
+{
+    width: 100%;
+    font-size: 19px;
+    background-color:blue;
+    color:white;
+    border: 1px solid blue;
+}
+.search-btn:hover{
+    background-color:rgba(255, 255, 255, 0.7) ;
+    cursor: pointer;
+    }
+.advance a
+{
+   text-decoration: none; 
+   float: right;
+   margin-right: 20px;
+   color: white;
+   font-size: 24px;
+   font-weight: bold;
+}
+nav > .nav.nav-tabs{
+
+    border: none;
+     /* color:#fff;
+      background:#272e38;*/
+      border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 18px 25px;
+     /* color:#fff;
+      background:#272e38;*/
+      border-radius:0;
+  }
+  
+  /*nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #e74c3c ;
+  }*/
+  .tab-content{
+    background: #fdfdfd;
+      line-height: 25px;
+      border: 1px solid #ddd;
+      border-top:5px solid #e74c3c;
+      border-bottom:5px solid #e74c3c;
+      padding:30px 25px;
+  }
+
+
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #0bb9e5;
+      color:#fff;
+      border-radius:0;
+      transition:background 0.20s linear;
+  }
+  .change9
+  {
+     border: 1px solid rgb(10, 152, 177);
+     height: 236px;
+     padding: 5px;
+     align-content: center;
+     margin-left: 150px;
+     margin-top: 40px;
+     margin-right: 150px;
+  }
+/* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+ 
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+ul#menu li {
+    display:inline;
+  }

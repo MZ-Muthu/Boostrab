@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hello, world!</title>
+
+    <style>
+  @media only screen and (max-width: 576px) {
+ .hello {
+ 	display: none;
+ }
+ .are{display: none;}
+}
+ @media only screen and (min-width: 576px) {
+ .hi {
+ 	display: none;
+ }
+ 
+
+ 
+}
+ @media only screen and (max-width: 992px) {
+ .hello {
+ 	display: none;
+ }
+ }
+ 
+  @media only screen and (min-width: 992px) {
+ .hi {
+ 	display: none;
+ }
+ .are{display: none;}
+}
+ 
+ 
+ 
+ 
+.hero-image {
+  background-image: url(https://www.hudson.sg/images/default-source/banners/banner-2.jpg);
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .check
+  {
+  margin: 78px 0px 0px 12px;
+ background: rgba(242, 242, 242, 0.6);
+ padding: 107px 42px 122px 55px;
+  }
+
+
+  input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.work
+{
+
+ height: 110px;
+    width: 110px;
+    margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row"> 
+            <div id="accordion col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    Employers
+                </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    Specialist recruitment
+                </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Accounting & Finance</li>
+                        <li class="list-group-item">Financial Services</li>
+                        <li class="list-group-item">Human Resources</li>
+                        <li class="list-group-item">Sales & Marketing </li>
+                        <li class="list-group-item">Technology & Digital</li>
+                      </ul>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    Talent assessment & selection
+                </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Profile success</li>
+                        <li class="list-group-item">Individual assessment</li>
+                        <li class="list-group-item">Volume assessment</li>
+                        <li class="list-group-item">Graduate recruitment</li>                        
+                      </ul>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                    Leadership
+                </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Identify leaders</li>
+                        <li class="list-group-item">Develop leaders</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                    Organisational change
+                </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Navigate change</li>
+                        <li class="list-group-item">Realign capability</li>
+                        <li class="list-group-item">Mobilise careers</li>
+                        <li class="list-group-item">Outplacement & career<br> transition </li>                       
+                      </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-8" style="font-size:18px;">
+                In this fast-changing world, an organisation’s greatest competitive advantage comes from having the best people.<br>
+                <br>
+
+                    Hudson helps organisations to find and develop people with the right skills and experience – as well as the right motivational and cultural fit – to be high performers.<br><br>
+
+                    There’s a science to finding that perfect ‘fit’. We use rigorous recruitment processes and science-based psychometric assessment tools to help find, select and develop talent.<br><br>
+
+                    We are always looking for ways to innovate and add value to our clients.
+
+                    One way we are doing this is through our partnership with PredictiveHire. Together, we are developing and scaling new predictive tools for recruitment that will change the way that organisations find their best-fit talent
+               
+            </div>
+        </div>
+        </div> <br><br> <br>
+        <div class="container-fluid">
+            <div class="jumbotron">
+              <center><h1>Explore our complete talent solutions</h1></center>      
+             
+<div class="container hi">
+    <div class="row">
+      <div class="media border p-3 col-sm-3">
+        <img src="https://www.hudson.sg/images/default-source/icons/recruitment.png" alt="John Doe" class="mr-3 mt-3 work">
+        <div class="media-body">
+          <h2>Permanent & contract recruitment</h2>
+            
+        </div>
+      </div>
+       <div class="media border p-3 col-sm-3">
+        <img src="https://www.hudson.sg/images/default-source/icons/candidate-profiling.png" alt="John Doe" class="mr-3 mt-3 work">
+        <div class="media-body">
+         Secure the right talent – people who will stay and perform
+        </div>
+      </div>
+       <div class="media border p-3 col-sm-3">
+        <img src="https://www.hudson.sg/images/default-source/icons/leadership.png" alt="John Doe" class="mr-3 mt-3 work">
+        <div class="media-body">
+         Secure the right talent – people who will stay and perform
+        </div>
+      </div>
+       <div class="media border p-3 col-sm-3">
+        <img src="https://www.hudson.sg/images/default-source/icons/outplacement.png" alt="John Doe" class="mr-3 mt-3 work">
+        <div class="media-body">
+         Secure the right talent – people who will stay and perform     
+        </div>
+      </div>
+     </div>
+    </div>
+    
+    
+    
+    <div class="container hello">
+    <div class="row">
+      <div class="media border p-3 col-sm-3">
+        <div class="card" style="width:200px">
+        <img class="card-img-top  work" src="https://www.hudson.sg/images/default-source/icons/recruitment.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+       <div class="media border p-3 col-sm-3">
+        <div class="card" style="width:200px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/candidate-profiling.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+       <div class="media border p-3 col-sm-3">
+       <div class="card" style="width:200px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/leadership.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+       <div class="media border p-3 col-sm-3">
+        <div class="card" style="width:200px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/outplacement.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+     </div>
+    </div>
+    
+    <div class="container are">
+    <div class="row">
+      <div class="media border p-3 col-sm-6">
+        <div class="card" style="width:400px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/recruitment.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+       <div class="media border p-3 col-sm-6">
+        <div class="card" style="width:400px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/candidate-profiling.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+       <div class="media border p-3 col-sm-6">
+       <div class="card" style="width:400px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/leadership.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+       <div class="media border p-3 col-sm-6">
+        <div class="card" style="width:400px">
+        <img class="card-img-top work" src="https://www.hudson.sg/images/default-source/icons/outplacement.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+      </div>
+     </div>
+    </div>
+    
+   
+    <div class="hero-image">
+        <div class="container mt-3">
+       
+       
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       
+       <div class="carousel-inner">  
+           <div class=" carousel-item active">
+             <center><p class="check">I found Hudson great to deal with, the consultant answered my questions promptly, and only sent through candidates with the relevant experience I was after. I was really impressed with both candidates offered.<br><br><b>Accounting & Finance Team Leader, Travel.</b>
+             </p></center>
+           </div>
+           <div class="carousel-item">
+            <center><p class="check">It’s very rare for someone not to have at least one.
+       By identifying and managing them you can stop them becoming a leader’s downfall.
+       <br><br><b>Simon Moylan, Hudson Executive General Manager, Talent Management, Asia Pacific.</b><p></center>
+           </div>
+         </div>
+         
+         <!-- Left and right controls -->
+        
+       </div>
+    </div>
+       </div>
+       </div>    
+          </div>
+
+
+          <div class="container">
+            <center>
+              <h2>Innovation</h2>
+            <p style="font-size:18px; width: 65%;">We develop tools to discover and develop talent. For example, we have created a Leadership Blueprint which maps leadership strengths (and derailers) against data obtained through our psychometric assessments.<br><br>
+            
+            In 2017 we partnered with an HR Tech accelerator to fast-track start-ups and scale-ups, including a representative from Hudson.​<br><br>
+            
+            Internally, we encourage new ideas through our innovation program, as well as a quarterly Innovation Award.<br><br></p>
+            </center>
+        </div>
+
+        <div class="container-fluid">
+           <img src="https://www.hudson.sg/images/default-source/banners/hr-tech.png?sfvrsn=5b7f7920_4" width=100%>
+          </div>
+          <br><br>
+          <div class="container">
+            <h1>Contact us for all your recruitment and talent needs</h1>
+            <p>If you have a question or would like to speak to us about our recruitment or talent management services, fill out this form and we will be in touch shortly.</p>
+          </div>
+
+          <div class="container">
+            <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Company</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Job Tittle</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+           <div class="row">
+              <div class="col-25">
+                <label for="lname">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Phone-number</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country" height=50px>Which function does the role sit?
+          </label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." rows="5"></textarea>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-25">
+                <label for="subject">Attach documents</label>
+              </div>
+              <div class="col-75">
+                <div class="form-group">
+                <input type="file" class="form-control-file border" name="file">
+              </div>
+              </div>
+          
+            </div><div class="row">
+              <div class="col-25">
+                <label for="lname">Privacy policy</label>
+              </div>
+              <div class="col-75">
+                <input type="checkbox">&nbsp;&nbsp;I agree to the collection, use and disclosure of my personal information in accordance with Hudson's Privacy Policy.
+              </div>
+            </div>
+            
+            <div class="row">
+                <center><input type="submit" value="Submit"></center>
+            </div>
+            </form>
+          </div>
+          
+          
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

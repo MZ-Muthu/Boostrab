@@ -1,0 +1,37 @@
+.change
+{
+    width: 500px;
+    margin: 90px 0 0 15vw;
+}
+
+.change1
+{
+    width: 28vw;
+}
+
+@media only screen and (max-width: 977px) {
+.change1
+{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 977px) {
+    .change
+    {
+        width: 100%;
+    }
+    }
+
+.change3
+{
+    float:right;
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 847px) {
+    .change3
+    {
+        float: none;
+    }
+    }

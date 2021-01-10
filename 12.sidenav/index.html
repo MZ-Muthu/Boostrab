@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+ 
+  <div class="container">
+    <p class="profiletxt">Profile Summary</p>
+    <div class="form">
+        <div class="form-item">
+          <input type="text" id="password" autocomplete="off" required maxlength="250">
+          <label for="text">Enter Your Summary</label>
+          
+        </div>        
+      </div>
+      <a class="profilebtn">Save</a>
+</div>
+</div>
+
+<div id="mySidepanel1" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+  
+  <div class="container"> 
+  <p class="profiletxt">Upload Resume</p>
+  <small>Upload your resume to get more opportunity to your relevant profile.</small>
+  <br>
+  <br>
+  <form>
+    <center>
+      <i class="fa fa-cloud-upload fa-2x"></i>
+      <p>Drag Your Files</p>
+      <p href="#" class="resumea"> or Upload Your files</p>
+      <small style="top:0;">* doc, docx, rtf, pdf - Max. 6 MB</small>
+      <p class="marg"></p>
+     <input type="file" class="resume" />
+     </center>
+  </form>
+<center>
+  <p>OR</p>
+  </center>
+  <div contentEditable=true class="editable" data-placeholder="Enter name here"></div>
+  
+  </div>
+  <a href="#" class="resumebtn">Save</a>
+  </div>
+
+
+  <div id="mySidepanel2" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
+   
+    <div class="container">
+      <p class="profiletxt">Skills</p>
+      <div class="form">
+          <div class="form-item">
+           
+            <input type="text" id="password" autocomplete="off" required maxlength="250">
+            <label for="text">Enter Your Summary</label>
+          </div>        
+        </div>
+        <a class="profilebtn">Save</a>
+  </div>
+  </div>
+
+  <div id="mySidepanel3" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
+   
+    <div class="container">
+      <p class="profiletxt">IT Skills</p>
+      <div class="form">
+          <div class="form-item">
+            <div class="container">
+              <form> 
+              <div class="form-group">
+                
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="skills">
+                </div>
+                
+                <div class="form-group">
+                
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="version">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div> 
+                
+                 <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div> 
+                
+                 <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div> 
+              </form>
+              </div>
+            
+          </div>        
+        </div>
+        <a class="profilebtn">Save</a>
+  </div>
+  </div>
+
+  <div id="mySidepanel4" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">×</a>
+   
+    <div class="container">
+      <p class="profiletxt">Skills</p>
+      <div class="form">
+         
+              <form> 
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div> 
+                
+                 <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div> 
+                <div class="form-item">
+                  <div class="container">
+                <input type="text" id="password" autocomplete="off" required maxlength="250">
+                <label for="text">Preferred Role</label>
+                <br>
+               
+              </div>
+            </div>
+            <p style="font-weight: bold;">Job Type
+            </p>
+            <div class="form-check d-inline">
+              <label class="form-check-label" for="radio1">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Permanent
+              </label>
+            </div>
+            <div class="form-check d-inline">
+              <label class="form-check-label" for="radio2">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Temprovery/contract
+              </label>
+            </div>
+            <div class="form-check d-inline">
+              <label class="form-check-label" for="radio3">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Both
+              </label>
+            </div>
+            <p style="font-weight: bold;">Employement Type
+            </p>
+
+            <section class="section-preview">
+      
+              <!-- Material unchecked -->
+              <div class="form-check d-inline">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Full Time</label>
+              </div>
+              <!-- Material checked -->
+              <div class="form-check d-inline">
+                <input type="radio" class="form-check-input" id="materialChecked" name="materialExampleRadios" checked="">
+                <label class="form-check-label" for="materialChecked">Part Time</label>
+              </div>
+
+              <div class="form-check d-inline">
+                <input type="radio" class="form-check-input" id="materialChecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Both</label>
+              </div>
+      
+            </section>
+            <br>
+            <br>
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div> 
+
+            <div class="form-item">
+              <div class="container">
+            <input type="text" id="password" autocomplete="off" required maxlength="250">
+            <label for="text">Location</label>
+            <br>
+           
+          </div>
+        </div>
+
+        <p style="font-weight: bold;">Expect Salary
+        </p>
+        <div class="input-group mt-3 mb-3">
+          <div class="input-group-prepend">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" placeholder="Username">
+        </div>
+    
+                <p style="font-weight: bold;">Salary Mode
+                </p>
+                <section class="section-preview">
+      
+                  <!-- Default unchecked -->
+                  <div class="custom-control d-inline custom-radio ">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                    <label class="custom-control-label" for="defaultUnchecked">Monthly</label>
+                  </div>
+          
+                  <div class="my-2"></div>
+          
+                  <!-- Default checked -->
+                  <div class="custom-control d-inline custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked="">
+                    <label class="custom-control-label" for="defaultChecked">Annually</label>
+                  </div>
+          
+              
+    
+                </section>
+                <br>
+                <small>Calculated Monthly Salaryis QMR 0</small>
+
+                <p style="font-weight: bold;">Are you willing to work 6 days a week?
+                </p>
+
+                <section class="py-3">
+    
+                  <!--Radio group-->
+                  <div class="form-check d-inline">
+                    <input type="radio" class="form-check-input with-gap" id="radioGap1" name="groupOfRadioGap">
+                    <label class="form-check-label" for="radioGap1">Yes</label>
+                  </div>
+              
+                  <div class="form-check d-inline">
+                    <input type="radio" class="form-check-input with-gap" id="radioGap2" name="groupOfRadioGap" checked>
+                    <label class="form-check-label" for="radioGap2">No</label>
+                  </div>
+              
+                  <!--Radio group-->
+                  
+                </section>
+
+                
+                <p style="font-weight: bold;">Are you open to joining early stage startups?
+                </p>
+                <section class="py-3">
+    
+                  <!--Radio group-->
+                  <div class="form-check radio-green d-inline">
+                    <input type="radio" class="form-check-input" id="radioGreen1" name="groupOfRadioGreen">
+                    <label class="form-check-label" for="radioGreen1">Yes</label>
+                  </div>
+              
+                  <div class="form-check radio-green d-inline">
+                    <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" checked>
+                    <label class="form-check-label" for="radioGreen2">No</label>
+                  </div>
+              
+                  <!--Radio group-->
+                  
+                </section>
+              </form>
+              </div>  <a class="preferencebtn">Save</a>         
+          </div>        
+        </div>
+        
+
+        <div id="mySidepanel5" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Work Experience</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Designation</label>
+                </div>        
+              </div>
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Organisation</label>
+                </div>        
+              </div>
+
+              <p style="font-weight: bold;">Is this your current company?
+              </p>
+
+              <section class="py-3">
+  
+                <!--Radio group-->
+                <div class="form-check d-inline">
+                  <input type="radio" class="form-check-input with-gap" id="radioGap1" name="groupOfRadioGap">
+                  <label class="form-check-label" for="radioGap1">Yes</label>
+                </div>
+            
+                <div class="form-check d-inline">
+                  <input type="radio" class="form-check-input with-gap" id="radioGap2" name="groupOfRadioGap" checked>
+                  <label class="form-check-label" for="radioGap2">No</label>
+                </div>
+            
+                <!--Radio group-->
+
+                
+              </section>
+              <p style="font-weight: bold;">Worked From
+              </p>
+                <input type="date" class="form-control" id="email"  name="email">
+                <p style="font-weight: bold;">Worked Till
+                </p>
+                <input type="date" class="form-control" id="pwd"  name="pswd" />
+                <br>
+                 <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div> 
+
+                <div class="input-group mt-3 mb-3">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Hide my salary from potential employers
+                  </label>
+                </div>
+
+                
+                <section class="py-3">
+                  <p style="font-weight: bold;">Salary Mode *
+                  </p>
+                  <!--Radio group-->
+                  <div class="form-check radio-green d-inline">
+                    <input type="radio" class="form-check-input" id="radioGreen1" name="groupOfRadioGreen">
+                    <label class="form-check-label" for="radioGreen1">Monthly</label>
+                  </div>
+              
+                  <div class="form-check radio-green d-inline">
+                    <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" checked>
+                    <label class="form-check-label" for="radioGreen2">Annually</label>
+                  </div>
+              
+                  <!--Radio group-->
+                  
+                </section>
+
+                <small>
+                  Calculated Annually Salaryis SGD 0
+                </small>
+                <div>
+                <p style="color: blue;">Describe your Job Profile
+                </p>
+                <textarea maxlength="1000" placeholder="Type here..." class="experience">
+
+                </textarea>
+                </div>
+              <a class="preferencebtn">Save</a>
+        </div>
+        </div>
+
+        <div id="mySidepanel6" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Educational Details</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Highest Qualification</label>
+                  
+                </div>        
+              </div>
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Specialization</label>
+                  
+                </div>        
+              </div>
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Institute</label>
+                  
+                </div>        
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div> 
+
+               
+              <section class="py-3">
+                <p style="font-weight: bold;">Salary Mode *
+                </p>
+                <!--Radio group-->
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen1" name="groupOfRadioGreen">
+                  <label class="form-check-label" for="radioGreen1">Full Time</label>
+                </div>
+            
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" checked>
+                  <label class="form-check-label" for="radioGreen2">Part Time</label>
+                </div>
+                <br>
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" checked>
+                  <label class="form-check-label" for="radioGreen2">Correspondence</label>
+                </div>
+            
+                <!--Radio group-->
+                
+              </section>
+              <a class="profilebtn">Save</a>
+        </div>
+        </div>
+
+        <div id="mySidepanel7" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Project</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Title</label>
+                  
+                </div>        
+              </div>
+
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Content</label>
+                  
+                </div>        
+              </div>
+
+              <section class="py-3">
+                <p style="font-weight: bold;">Salary Mode *
+                </p>
+                <!--Radio group-->
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen1" name="groupOfRadioGreen">
+                  <label class="form-check-label" for="radioGreen1">In Progress</label>
+                </div>
+            
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" checked>
+                  <label class="form-check-label" for="radioGreen2">Finished</label>
+                </div>         
+              </section>
+
+              <div class="form-check-inline">
+                <label class="form-check-label" >
+                 <select class="form-control">
+                  <option>Start Year</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" >
+                  <select class="form-control">
+                  <option >Start Month</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </label>
+              </div>
+
+              <div class="form-check-inline">
+                <label class="form-check-label" >
+                 <select class="form-control">
+                  <option>End Year</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" >
+                  <select class="form-control">
+                  <option >End Month</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </label>
+              </div>
+              <div>
+                <p style="color: blue;">Describe your Job Profile
+                </p>
+                <textarea maxlength="1000" placeholder="Type here..." class="experience">
+
+                </textarea>
+                </div>
+
+                <div class="form">
+                  <div class="form-item">
+                    <input type="text" id="password" autocomplete="off" required maxlength="4000">
+                    <label for="text">Location</label>
+                    
+                  </div>        
+                </div>
+
+                <div class="form">
+                  <div class="form-item">
+                    <input type="text" id="password" autocomplete="off" required maxlength="250">
+                    <label for="text">Link</label>
+                    
+                  </div>        
+                </div>
+  
+              <a class="preferencebtn">Save</a>
+        </div>
+        </div>
+
+        <div id="mySidepanel8" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Profile Summary</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Certificate</label>
+                  
+                </div>        
+              </div>
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Issued Date</label>
+                  
+                </div>        
+              </div>
+              <p style="font-weight: bold;">Validity *
+              </p>
+              <div class="form-check-inline">
+                <label class="form-check-label" >
+                 <select class="form-control">
+                  <option>Year</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" >
+                  <select class="form-control">
+                  <option >Month</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                </label>
+              </div>
+              <br>
+              <br>
+              
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Lifetime
+                </label>
+              </div>
+              <a class="profilebtn">Save</a>
+        </div>
+        </div>
+
+        <div id="mySidepanel9" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Personal Details</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Home Town</label>
+                  
+                </div>        
+              </div>
+
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Permanent Address</label>
+                  
+                </div>        
+              </div>
+
+              <section class="py-3">
+                <p style="font-weight: bold;">Salary Mode *
+                </p>
+                <!--Radio group-->
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen1" name="groupOfRadioGreen">
+                  <label class="form-check-label" for="radioGreen1">Male</label>
+                </div>
+            
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" checked>
+                  <label class="form-check-label" for="radioGreen2">Female</label>
+                </div>      
+                <div class="form-check radio-green d-inline">
+                  <input type="radio" class="form-check-input" id="radioGreen2" name="groupOfRadioGreen" >
+                  <label class="form-check-label" for="radioGreen2">not prefer</label>
+                </div>         
+              </section>
+
+              <div class="form">
+                <div class="form-item">
+                  <input type="number" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">PinCode</label>
+                  
+                </div>        
+              </div>
+              
+
+               
+                 <select class="form-control" style="width:100%;">
+                  <option>Marital Status</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                
+            <br>
+
+             <div class="form">
+                <div class="form-item">
+                  <input type="date" id="password" autocomplete="off">
+                  <label for="text">Date of Birth</label>
+                  
+                </div>        
+              </div>
+
+              
+              <select class="form-control" style="width:100%;">
+                <option>Category</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+              
+          <br>
+
+          <div class="form">
+            <div class="form-item">
+              <input type="number" id="password" autocomplete="off" required maxlength="250">
+              <label for="text">Passport number</label>
+              
+            </div>        
+          </div>
+
+            <select class="form-control" style="width:100%;">
+              <option>Resident Status</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            
+            <br>
+
+            <select class="form-control" style="width:100%;">
+              <option>Work Permit For USA</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+  
+              <br>
+
+              <select class="form-control" style="width:100%;">
+                <option>Work Permit for Other country</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                <br>
+
+                <select class="form-control" style="width:100%;">
+                  <option>Natunality</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+
+                <br>
+
+                <section class="py-3">
+                  <p style="font-weight: bold;">Specially abled</p>
+                  <!--Radio group-->
+                  <div class="form-check d-inline">
+                    <input type="radio" class="form-check-input with-gap" id="radioGap1" name="groupOfRadioGap">
+                    <label class="form-check-label" for="radioGap1">Yes</label>
+                  </div>
+              
+                  <div class="form-check d-inline">
+                    <input type="radio" class="form-check-input with-gap" id="radioGap2" name="groupOfRadioGap" checked>
+                    <label class="form-check-label" for="radioGap2">No</label>
+                  </div>
+              
+                  <!--Radio group-->
+                  <select class="form-control" style="width:100%;">
+                <option>Type</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                <br>
+                <select class="form-control" style="width:100%;">
+                <option>Sub Type</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                <br>
+                <select class="form-control" style="width:100%;">
+                <option>Details</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                <br>
+
+                <div class="form">
+                  <div class="form-item">
+                    <input type="number" id="password" autocomplete="off" required maxlength="250">
+                    <label for="text">Certificate Number</label>
+                    
+                  </div>        
+                </div>
+
+                <div class="form">
+                  <div class="form-item">
+                    <input type="number" id="password" autocomplete="off" required maxlength="250">
+                    <label for="text">Issued By</label>
+                    
+                  </div>        
+                </div>
+                </section>
+                <p style="font-weight: bold;">Describe your Job Profile
+                </p>
+                <textarea maxlength="1000" placeholder="Type here..." class="experience">
+
+                </textarea>
+              <a class="preferencebtn">Save</a>
+        </div>
+        </div>
+
+
+        <div id="mySidepanel10" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav10()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Languages Known</p>
+            <select class="form-control" style="width:100%;">
+              <option>Language</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+
+              <br>
+              <select class="form-control" style="width:100%;">
+                <option>Proficiency</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                <br>
+            <center>
+                <div class="form-check">
+                  <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Read
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label" for="check2">
+                    <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Write
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="check3" name="vehicle3" value="something">Speak
+                  </label>
+                </div>
+                </center>
+              <a class="profilebtn">Save</a>
+        </div>
+        </div>
+        
+        <div id="mySidepanel11" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav11()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Awards & Achievements</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Award Name</label>
+                  
+                </div>        
+              </div>
+              
+              <select class="form-control" style="width:100%;">
+                <option>Year</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+                <br>
+
+                <select class="form-control" style="width:100%;">
+                  <option>Month</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+  
+                  <br>
+                  <div>
+                    <p style="font-weight: bold;">Describe your Job Profile
+                    </p>
+                    <textarea maxlength="1000" placeholder="Type here..." class="experience">
+    
+                    </textarea>
+                    </div>
+              <a class="profilebtn">Save</a>
+        </div>
+        </div>
+
+        <div id="mySidepanel12" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav12()">×</a>
+         
+          <div class="container">
+            <p class="profiletxt">Online Presence</p>
+            <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Enter Your Summary</label>
+                  
+                </div>        
+              </div>
+
+              <div class="form">
+                <div class="form-item">
+                  <input type="text" id="password" autocomplete="off" required maxlength="250">
+                  <label for="text">Enter Your Summary</label>
+                  
+                </div>        
+              </div>
+              
+              <div>
+                <p style="font-weight: bold;">Description
+                </p>
+                <textarea maxlength="1000" placeholder="Type here..." class="experience">
+
+                </textarea>
+                </div>
+         
+              <a class="profilebtn">Save</a>
+        </div>
+        </div>
+ 
+
+<button class="openbtn" onclick="openNav()">☰profile summary</button>  
+<button class="openbtn" onclick="openNav1()">☰Resume</button>  
+<button class="openbtn" onclick="openNav2()">☰Skills</button>  
+<button class="openbtn" onclick="openNav3()">☰IT Skills</button>
+<button class="openbtn" onclick="openNav4()">☰Job Preference</button>    
+<button class="openbtn" onclick="openNav5()">☰Work Experience</button>   
+<button class="openbtn" onclick="openNav6()">☰Educational Details</button>    
+<button class="openbtn" onclick="openNav7()">☰Project</button>    
+<button class="openbtn" onclick="openNav8()">☰Courses & Certification</button>   
+<button class="openbtn" onclick="openNav9()">☰Personal Details</button>   
+<button class="openbtn" onclick="openNav10()">☰Language Known</button>   
+<button class="openbtn" onclick="openNav11()">☰Awards & Achievements</button>   
+<button class="openbtn" onclick="openNav12()">☰Online Presence</button>   
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "300px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+   document.body.style.backgroundColor = "white";
+}
+
+function openNav1() {
+  document.getElementById("mySidepanel1").style.width = "300px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav1() {
+  document.getElementById("mySidepanel1").style.width = "0";
+   document.body.style.backgroundColor = "white";
+}
+
+function openNav2() {
+  document.getElementById("mySidepanel2").style.width = "300px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav2() {
+  document.getElementById("mySidepanel2").style.width = "0";
+   document.body.style.backgroundColor = "white";
+}
+
+
+function openNav3() {
+  document.getElementById("mySidepanel3").style.width = "300px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav3() {
+  document.getElementById("mySidepanel3").style.width = "0";
+   document.body.style.backgroundColor = "white";
+}
+
+function openNav4() {
+  document.getElementById("mySidepanel4").style.width = "300px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav4() {
+  document.getElementById("mySidepanel4").style.width = "0";
+   document.body.style.backgroundColor = "white";
+}
+
+function openNav5() {
+  document.getElementById("mySidepanel5").style.width = "300px";
+  
+}
+
+function closeNav5() {
+  document.getElementById("mySidepanel5").style.width = "0";
+  
+}
+
+function openNav6() {
+  document.getElementById("mySidepanel6").style.width = "300px";
+  
+}
+
+function closeNav6() {
+  document.getElementById("mySidepanel6").style.width = "0";
+  
+}
+
+function openNav7() {
+  document.getElementById("mySidepanel7").style.width = "300px";
+  
+}
+
+function closeNav7() {
+  document.getElementById("mySidepanel7").style.width = "0";
+  
+}
+
+function openNav8() {
+  document.getElementById("mySidepanel8").style.width = "300px";
+  
+}
+
+function closeNav8() {
+  document.getElementById("mySidepanel8").style.width = "0";
+  
+}
+
+
+function openNav9() {
+  document.getElementById("mySidepanel9").style.width = "300px";
+  
+}
+
+function closeNav9() {
+  document.getElementById("mySidepanel9").style.width = "0";
+  
+}
+
+
+function openNav10() {
+      document.getElementById("mySidepanel10").style.width = "300px";
+     
+    }
+    
+    function closeNav10() {
+      document.getElementById("mySidepanel10").style.width = "0";
+       
+    }
+
+    function openNav11() {
+      document.getElementById("mySidepanel11").style.width = "300px";
+     
+    }
+    
+    function closeNav11() {
+      document.getElementById("mySidepanel11").style.width = "0";
+       
+    }
+
+    function openNav12() {
+      document.getElementById("mySidepanel12").style.width = "300px";
+     
+    }
+    
+    function closeNav12() {
+      document.getElementById("mySidepanel12").style.width = "0";
+       
+    }
+</script>
+   
+</body>
+</html> 

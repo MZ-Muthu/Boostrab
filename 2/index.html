@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/* Better box-model */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+  Screen reader only
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 5px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #333;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+
+
+.main-menu {
+  position: absolute;
+  display: none;
+  left: -200px; 
+  top: 0;
+  height: 100%;
+	overflow-y: scroll;
+	overflow-x: visible;
+	transition: left 0.3s ease,
+				      box-shadow 0.3s ease;
+	z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+ 
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: #1a1a1a;
+}
+
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu a.menu-close {
+  border-bottom: 0; /* no border for the X 'button' */
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838; /* add top border only for the first link */
+}
+
+/*
+  Hover & focus style
+*/
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+/*
+  Close button positioning
+  - Other styles come from `.main-menu a`
+*/
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  display: block;
+  left: 0; /* slide from -200px to the left edge at 0 */
+  outline: none;
+  /* fix box-shadow so it shows now */
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+  position: absolute;
+  display: block;  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+
+@supports (position: fixed) {
+  
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+
+@media (min-width: 768px) {
+  /* Hide hamburger menu/'button' */
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+		left: auto;
+		top: auto;
+		height: auto;
+    display: block;
+  }
+  
+  .main-menu ul {
+    display: flex; /* allows for full height of menu */
+    
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  
+  .main-menu a {
+    color: white
+    border: 0 !important; 
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; 
+    color: #c00;
+  }
+}
+
+/*
+ Demo purposes only
+*/
+header {
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+article {
+  padding: 30px;
+  max-width: 55em;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+article h2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.logo {
+  margin: 0 30px 0 10px;
+  font-size: 1.5em;
+}
+@media (max-width: 768px)
+{
+.logo{
+  margin: 0 60px 0 230px;
+}
+}
+
+
+form > a
+{
+ position: absolute;
+  margin-top: 180px;
+  margin-left: 10%;
+  padding: 13px 23px;
+  background-color: #337ab7;
+  border: none;
+  text-decoration: none;
+  
+  color: white;
+}
+
+@media (max-width: 768px)
+{
+  form > a{
+    display:none;
+  }
+}
+form > a:active
+{
+  background-color: #EBBA7C;
+}
+
+#col > input[type=text]
+{
+  margin-top:225px ;
+  margin-left: 10%;
+  padding: 9px 0px 9px 13px;
+  width: 40%;
+  height: 40px;
+  outline: none;
+  border:none;
+}
+
+#col > input[list=browsers]
+{
+  width: 20%;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+#col > input[type=submit]
+{
+  width:20%;
+  height:40px;
+  color: white;
+  background-color: #0073e1;
+  border:none;
+  outline:none;
+  font-size: 15px;
+  border-right: 10%;
+  font-weight: bold;
+}
+
+@media (max-width: 768px)
+{
+  #col > input[type=text],
+  #col > input[list=browsers],
+  #col > input[type=submit]
+  {
+    display:none;
+  }
+}
+@media (min-width: 768px)
+{
+  div#sum
+  {
+    display:none;
+  }
+}
+@media (max-width: 768px)
+{
+ #dis{
+  padding:20px;
+  background-color: #0073B1;
+  font-size="15px"
+  font-weight: bold;
+  color:white;
+  cursor: pointer;
+ }
+}
+
+details > option
+{
+  padding: 15px;
+  background-color: white;
+  color:#8593A9;
+  box-sizing: border-box;
+}
+
+div#box
+{
+
+  width:53%;
+  height: 200px;
+  margin-right: 10%;
+  
+  border: 1px solid white;
+  margin: -208px 10px 10px 35%;
+  background-color:white;
+  
+  padding: 0px 0 0 10px ;
+  }
+div#box:hover
+{
+  box-shadow: 10px;
+}
+div > img
+{
+  width: 24%;
+  background-color:white;
+  margin-left: 10%;
+  height: 194px;
+  margin: 70px 10px 10px 100px;
+}
+
+@media (max-width: 768px)
+{
+div#box
+{
+
+  width: 320px;
+  height: 200px;
+  border: 1px solid white;
+  margin: -14px 10px 10px 70px;
+  background-color:white;
+  
+  padding: 0px 0 0 10px ;
+  }
+
+div > img
+{
+  width: 320px;
+  background-color:white;
+  height: 194px;
+  margin: 50px 10px 10px 70px;
+}
+}
+
+div#foot
+{
+  height: 120px;
+  width:100%;
+  background-color: rgb(56, 50, 50);
+  text-align: center;
+  color:white;
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+
+<header style="background-color: black;">
+  
+  
+  <a href="#main-menu"
+     id="main-menu-toggle"
+     class="menu-toggle"
+     aria-label="Open main menu">
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+  
+  <img src="http://007flats.com/wp-content/uploads/2020/02/007-logo-final-2.jpg" style="height: 54px;width:54px;" class="logo">
+  
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    
+    <a href="#main-menu-toggle"
+       id="main-menu-close"
+       class="menu-close"
+       aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+   
+    <h2 id="main-menu-heading" class="sr-only">Main menu</h2>
+    <ul aria-labelledby="main-menu-heading">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+     
+    </ul>
+  </nav>
+ 
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+</header>
+<div style="background-image: url('Webp.net-compress-image-2-1.jpg'); width:100%; height: 432px;">
+  <form action="#">
+    <a href="#">Rendal</a>
+    <a href="#" style="margin-left: 22%;">Sales</a>
+    <div id="col">
+      <input type="text" placeholder="Search state, Area and city">
+      <input list="browsers" name="browser" id="browser">
+      <datalist id="browsers" value="All Types">
+        <option value="Apartment">
+        <option value="Apartments">
+        <option value="B & B">
+        <option value="Cabin">
+        <option value="Condos">
+        <option value="Dorm">
+        <option value="Duplexes">
+        <option value="House">
+      </datalist>
+      <input type="submit" value="Search Properties">
+    </div>
+  </form>
+
+</div>
+<div id="sum">
+  <details id="dis">
+    <summary style="outline: none;" class="fa">&#xf002;Advanced Search
+    </summary>
+    
+      <option>Apartment</option>
+      <option>Apartments</option>
+      <option>B & B</option>
+      <option>Cabin</option>
+      <option>Condos</option>
+      <option>Dorm</option>
+      <option>Duplexes</option>
+      <option>House</option>
+  </details>
+</div>
+
+<div style="background-color:  #f2f2f2;">
+ <img src="http://007flats.com/wp-content/uploads/2017/11/img4-525x328.jpg" />
+ <div id="box" >
+  
+    <h4>3 Rooms Appartment</h4>
+    <h4 style="color:orange;">₹9,000</h4>
+    <h5>Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood Floors, Cherry Cabinets And New Bath And Complete Set Of Stainless Steel Appli [more]
+    </h5>
+  </div>
+</div> 
+</div>
+<footer>
+  <div id="foot">
+    <h3>Contact:</h3>
+<h4>67, K.M.A Garden, Chinnandimadam Industrial Estate, Kodungaiyur, chennai - 600118<br>
+9361365818<br>
+flats007ecs@gmail.com</h4>
+  </div>
+</footer>
+</body>
+</html>
